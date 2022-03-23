@@ -100,6 +100,10 @@ internal final class MainViewController: CommonBaseViewController, StoryboardVie
         reactor.state.map { $0.sections }
             .distinctUntilChanged()
             .asDriver(onErrorJustReturn: [])
+            .do(afterNext: { _ in
+                reactor.isLoadingNextPage = false
+            })
+
             .drive(collectionView.rx.items(dataSource: self.dataSource))
             .disposed(by: self.disposeBag)
                         
@@ -119,29 +123,17 @@ internal final class MainViewController: CommonBaseViewController, StoryboardVie
             .disposed(by: self.disposeBag)
         
         collectionView.rx.contentOffset
-            .map { offset -> CGPoint in
-                printLog(out: "PARK TEST \(offset)")
-                return offset
-            }
-            .filter { _ in
-                printLog(out: "PARK TEST page : \(reactor.requestModel.page)")
-                return reactor.requestModel.page != -1
-            }
-            .filter { _ in
-                printLog(out: "PARK TEST isLoadingNextPage : \(reactor.isLoadingNextPage)")
-                return !reactor.isLoadingNextPage
-            }
+            .filter { _ in reactor.requestModel.page != -1 }
+            .filter { _ in !reactor.isLoadingNextPage }
             .filter { [weak self] offset in
                 guard let self = self,
                       self.collectionView.frame.height < self.collectionView.contentSize.height,
                       offset.y > 80 else { return false }
-                printLog(out: "PARK TEST")
                 return offset.y + self.collectionView.frame.height >= self.collectionView.contentSize.height - 80
             }
             .do(onNext: { _ in
                 reactor.isLoadingNextPage = true
-            })
-                .debug()
+            })                
             .map { _ in Reactor.Action.loadNextPage }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
