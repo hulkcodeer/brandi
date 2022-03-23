@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1157FC1927E94F5600EB36D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC1827E94F5600EB36D1 /* AppDelegate.swift */; };
+		1157FC1B27E94F5600EB36D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC1A27E94F5600EB36D1 /* SceneDelegate.swift */; };
+		1157FC1D27E94F5600EB36D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC1C27E94F5600EB36D1 /* MainViewController.swift */; };
+		1157FC2027E94F5600EB36D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1157FC1E27E94F5600EB36D1 /* Main.storyboard */; };
+		1157FC2327E94F5600EB36D1 /* BrandiHomework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC2127E94F5600EB36D1 /* BrandiHomework.xcdatamodeld */; };
+		1157FC2527E94F5700EB36D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1157FC2427E94F5700EB36D1 /* Assets.xcassets */; };
+		1157FC2827E94F5700EB36D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1157FC2627E94F5700EB36D1 /* LaunchScreen.storyboard */; };
+		1157FC3327E94F5700EB36D1 /* BrandiHomeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC3227E94F5700EB36D1 /* BrandiHomeworkTests.swift */; };
+		1157FC3D27E94F5700EB36D1 /* BrandiHomeworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC3C27E94F5700EB36D1 /* BrandiHomeworkUITests.swift */; };
+		1157FC3F27E94F5700EB36D1 /* BrandiHomeworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC3E27E94F5700EB36D1 /* BrandiHomeworkUITestsLaunchTests.swift */; };
+		1157FC5027E9648E00EB36D1 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC4F27E9648E00EB36D1 /* UIStoryboard+Extension.swift */; };
+		1157FC5227E9649B00EB36D1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC5127E9649B00EB36D1 /* UIViewController+Extension.swift */; };
+		1157FC5427E964A800EB36D1 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC5327E964A800EB36D1 /* UICollectionViewCell+Extension.swift */; };
+		1157FC5627E964B600EB36D1 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC5527E964B600EB36D1 /* Int+Extension.swift */; };
+		1157FC5827E964C200EB36D1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC5727E964C200EB36D1 /* UIView+Extension.swift */; };
+		1157FC5A27E965BB00EB36D1 /* CommonBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC5927E965BB00EB36D1 /* CommonBaseViewController.swift */; };
+		1157FC5C27E965D500EB36D1 /* CommonBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC5B27E965D500EB36D1 /* CommonBaseCollectionViewCell.swift */; };
+		1157FC5F27E965EB00EB36D1 /* PrintLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC5E27E965EB00EB36D1 /* PrintLog.swift */; };
+		1157FC6527E96FF200EB36D1 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC6427E96FF200EB36D1 /* ApiError.swift */; };
+		1157FC6727E9700700EB36D1 /* BrandiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC6627E9700700EB36D1 /* BrandiAPI.swift */; };
+		1157FC6927E9702500EB36D1 /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC6827E9702500EB36D1 /* NetworkWorker.swift */; };
+		1157FC6C27E9ACC000EB36D1 /* SearchImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC6B27E9ACC000EB36D1 /* SearchImageModel.swift */; };
+		1157FC6E27E9AE6700EB36D1 /* MainViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC6D27E9AE6700EB36D1 /* MainViewReactor.swift */; };
+		1157FC7127E9AF2D00EB36D1 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC7027E9AF2D00EB36D1 /* ImageCollectionViewCell.swift */; };
+		1157FC7327E9D77500EB36D1 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1157FC7227E9D77500EB36D1 /* ImageCollectionViewCell.xib */; };
+		1157FC7527E9D7AE00EB36D1 /* MainItemReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC7427E9D7AE00EB36D1 /* MainItemReactor.swift */; };
+		1157FC7727E9FDA700EB36D1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157FC7627E9FDA700EB36D1 /* String+Extension.swift */; };
+		117525F127EA99B90002708B /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117525F027EA99B90002708B /* ImageDetailViewController.swift */; };
+		117525F327EA99CC0002708B /* ImageDetailViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117525F227EA99CC0002708B /* ImageDetailViewReactor.swift */; };
+		117525F527EAB5B90002708B /* SearchFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117525F427EAB5B90002708B /* SearchFilterModel.swift */; };
+		4167C8BB3D5294BD51C9B186 /* Pods_BrandiHomework_BrandiHomeworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECF6B7B82AE89E7BB277D /* Pods_BrandiHomework_BrandiHomeworkUITests.framework */; };
+		8CB3E01B08C83595D09983EE /* Pods_BrandiHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14832FE04E89C41ED08C9EFC /* Pods_BrandiHomework.framework */; };
+		CA834980C93D207078F3BD75 /* Pods_BrandiHomeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6CA8D4E282C0A8B3E602E1 /* Pods_BrandiHomeworkTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1157FC2F27E94F5700EB36D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1157FC0D27E94F5600EB36D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1157FC1427E94F5600EB36D1;
+			remoteInfo = BrandiHomework;
+		};
+		1157FC3927E94F5700EB36D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1157FC0D27E94F5600EB36D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1157FC1427E94F5600EB36D1;
+			remoteInfo = BrandiHomework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1157FC1527E94F5600EB36D1 /* BrandiHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrandiHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1157FC1827E94F5600EB36D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1157FC1A27E94F5600EB36D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1157FC1C27E94F5600EB36D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1157FC1F27E94F5600EB36D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1157FC2227E94F5600EB36D1 /* BrandiHomework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrandiHomework.xcdatamodel; sourceTree = "<group>"; };
+		1157FC2427E94F5700EB36D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1157FC2727E94F5700EB36D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1157FC2927E94F5700EB36D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1157FC2E27E94F5700EB36D1 /* BrandiHomeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrandiHomeworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1157FC3227E94F5700EB36D1 /* BrandiHomeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandiHomeworkTests.swift; sourceTree = "<group>"; };
+		1157FC3827E94F5700EB36D1 /* BrandiHomeworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrandiHomeworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1157FC3C27E94F5700EB36D1 /* BrandiHomeworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandiHomeworkUITests.swift; sourceTree = "<group>"; };
+		1157FC3E27E94F5700EB36D1 /* BrandiHomeworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandiHomeworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1157FC4F27E9648E00EB36D1 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		1157FC5127E9649B00EB36D1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1157FC5327E964A800EB36D1 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		1157FC5527E964B600EB36D1 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		1157FC5727E964C200EB36D1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1157FC5927E965BB00EB36D1 /* CommonBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBaseViewController.swift; sourceTree = "<group>"; };
+		1157FC5B27E965D500EB36D1 /* CommonBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		1157FC5E27E965EB00EB36D1 /* PrintLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintLog.swift; sourceTree = "<group>"; };
+		1157FC6427E96FF200EB36D1 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		1157FC6627E9700700EB36D1 /* BrandiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandiAPI.swift; sourceTree = "<group>"; };
+		1157FC6827E9702500EB36D1 /* NetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
+		1157FC6B27E9ACC000EB36D1 /* SearchImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageModel.swift; sourceTree = "<group>"; };
+		1157FC6D27E9AE6700EB36D1 /* MainViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewReactor.swift; sourceTree = "<group>"; };
+		1157FC7027E9AF2D00EB36D1 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		1157FC7227E9D77500EB36D1 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		1157FC7427E9D7AE00EB36D1 /* MainItemReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemReactor.swift; sourceTree = "<group>"; };
+		1157FC7627E9FDA700EB36D1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		117525F027EA99B90002708B /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		117525F227EA99CC0002708B /* ImageDetailViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewReactor.swift; sourceTree = "<group>"; };
+		117525F427EAB5B90002708B /* SearchFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterModel.swift; sourceTree = "<group>"; };
+		118ECF6B7B82AE89E7BB277D /* Pods_BrandiHomework_BrandiHomeworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrandiHomework_BrandiHomeworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14832FE04E89C41ED08C9EFC /* Pods_BrandiHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrandiHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6CA8D4E282C0A8B3E602E1 /* Pods_BrandiHomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrandiHomeworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2902BBABCE24E2221E1BA668 /* Pods-BrandiHomework-BrandiHomeworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandiHomework-BrandiHomeworkUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrandiHomework-BrandiHomeworkUITests/Pods-BrandiHomework-BrandiHomeworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E50855F6BD956829CDED688 /* Pods-BrandiHomeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandiHomeworkTests.debug.xcconfig"; path = "Target Support Files/Pods-BrandiHomeworkTests/Pods-BrandiHomeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55CEC13253E2E409167500DD /* Pods-BrandiHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandiHomework.release.xcconfig"; path = "Target Support Files/Pods-BrandiHomework/Pods-BrandiHomework.release.xcconfig"; sourceTree = "<group>"; };
+		6C61C42ACF90D5594A054DCC /* Pods-BrandiHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandiHomework.debug.xcconfig"; path = "Target Support Files/Pods-BrandiHomework/Pods-BrandiHomework.debug.xcconfig"; sourceTree = "<group>"; };
+		C4AE06A00894132CDA5ABC2A /* Pods-BrandiHomeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandiHomeworkTests.release.xcconfig"; path = "Target Support Files/Pods-BrandiHomeworkTests/Pods-BrandiHomeworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8A7BAB4335222C218448751 /* Pods-BrandiHomework-BrandiHomeworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandiHomework-BrandiHomeworkUITests.release.xcconfig"; path = "Target Support Files/Pods-BrandiHomework-BrandiHomeworkUITests/Pods-BrandiHomework-BrandiHomeworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1157FC1227E94F5600EB36D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB3E01B08C83595D09983EE /* Pods_BrandiHomework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1157FC2B27E94F5700EB36D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA834980C93D207078F3BD75 /* Pods_BrandiHomeworkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1157FC3527E94F5700EB36D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4167C8BB3D5294BD51C9B186 /* Pods_BrandiHomework_BrandiHomeworkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1157FC0C27E94F5600EB36D1 = {
+			isa = PBXGroup;
+			children = (
+				1157FC1727E94F5600EB36D1 /* BrandiHomework */,
+				1157FC3127E94F5700EB36D1 /* BrandiHomeworkTests */,
+				1157FC3B27E94F5700EB36D1 /* BrandiHomeworkUITests */,
+				1157FC1627E94F5600EB36D1 /* Products */,
+				DD8FE49C7A336F470DC99FD4 /* Pods */,
+				76327307EF8F513E88362F25 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1157FC1627E94F5600EB36D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC1527E94F5600EB36D1 /* BrandiHomework.app */,
+				1157FC2E27E94F5700EB36D1 /* BrandiHomeworkTests.xctest */,
+				1157FC3827E94F5700EB36D1 /* BrandiHomeworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1157FC1727E94F5600EB36D1 /* BrandiHomework */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC4B27E95E3500EB36D1 /* Application */,
+				1157FC6327E96FD200EB36D1 /* Network */,
+				1157FC6227E9664000EB36D1 /* Storyboard */,
+				1157FC5D27E965DF00EB36D1 /* Utils */,
+				1157FC4E27E9647100EB36D1 /* Commons */,
+				1157FC4D27E95FBE00EB36D1 /* Extensions */,
+				1157FC6027E9662400EB36D1 /* Views */,
+				1157FC2427E94F5700EB36D1 /* Assets.xcassets */,
+				1157FC2927E94F5700EB36D1 /* Info.plist */,
+				1157FC2127E94F5600EB36D1 /* BrandiHomework.xcdatamodeld */,
+			);
+			path = BrandiHomework;
+			sourceTree = "<group>";
+		};
+		1157FC3127E94F5700EB36D1 /* BrandiHomeworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC3227E94F5700EB36D1 /* BrandiHomeworkTests.swift */,
+			);
+			path = BrandiHomeworkTests;
+			sourceTree = "<group>";
+		};
+		1157FC3B27E94F5700EB36D1 /* BrandiHomeworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC3C27E94F5700EB36D1 /* BrandiHomeworkUITests.swift */,
+				1157FC3E27E94F5700EB36D1 /* BrandiHomeworkUITestsLaunchTests.swift */,
+			);
+			path = BrandiHomeworkUITests;
+			sourceTree = "<group>";
+		};
+		1157FC4B27E95E3500EB36D1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC1827E94F5600EB36D1 /* AppDelegate.swift */,
+				1157FC1A27E94F5600EB36D1 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1157FC4D27E95FBE00EB36D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC4F27E9648E00EB36D1 /* UIStoryboard+Extension.swift */,
+				1157FC5127E9649B00EB36D1 /* UIViewController+Extension.swift */,
+				1157FC5327E964A800EB36D1 /* UICollectionViewCell+Extension.swift */,
+				1157FC5527E964B600EB36D1 /* Int+Extension.swift */,
+				1157FC5727E964C200EB36D1 /* UIView+Extension.swift */,
+				1157FC7627E9FDA700EB36D1 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1157FC4E27E9647100EB36D1 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC5927E965BB00EB36D1 /* CommonBaseViewController.swift */,
+				1157FC5B27E965D500EB36D1 /* CommonBaseCollectionViewCell.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		1157FC5D27E965DF00EB36D1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC5E27E965EB00EB36D1 /* PrintLog.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1157FC6027E9662400EB36D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC6127E9662B00EB36D1 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1157FC6127E9662B00EB36D1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC6F27E9AF0700EB36D1 /* Cells */,
+				1157FC6A27E9ACAC00EB36D1 /* Models */,
+				1157FC1C27E94F5600EB36D1 /* MainViewController.swift */,
+				1157FC6D27E9AE6700EB36D1 /* MainViewReactor.swift */,
+				117525F027EA99B90002708B /* ImageDetailViewController.swift */,
+				117525F227EA99CC0002708B /* ImageDetailViewReactor.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1157FC6227E9664000EB36D1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC1E27E94F5600EB36D1 /* Main.storyboard */,
+				1157FC2627E94F5700EB36D1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1157FC6327E96FD200EB36D1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC6427E96FF200EB36D1 /* ApiError.swift */,
+				1157FC6627E9700700EB36D1 /* BrandiAPI.swift */,
+				1157FC6827E9702500EB36D1 /* NetworkWorker.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1157FC6A27E9ACAC00EB36D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC6B27E9ACC000EB36D1 /* SearchImageModel.swift */,
+				117525F427EAB5B90002708B /* SearchFilterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1157FC6F27E9AF0700EB36D1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1157FC7027E9AF2D00EB36D1 /* ImageCollectionViewCell.swift */,
+				1157FC7227E9D77500EB36D1 /* ImageCollectionViewCell.xib */,
+				1157FC7427E9D7AE00EB36D1 /* MainItemReactor.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		76327307EF8F513E88362F25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14832FE04E89C41ED08C9EFC /* Pods_BrandiHomework.framework */,
+				118ECF6B7B82AE89E7BB277D /* Pods_BrandiHomework_BrandiHomeworkUITests.framework */,
+				1B6CA8D4E282C0A8B3E602E1 /* Pods_BrandiHomeworkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD8FE49C7A336F470DC99FD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C61C42ACF90D5594A054DCC /* Pods-BrandiHomework.debug.xcconfig */,
+				55CEC13253E2E409167500DD /* Pods-BrandiHomework.release.xcconfig */,
+				2902BBABCE24E2221E1BA668 /* Pods-BrandiHomework-BrandiHomeworkUITests.debug.xcconfig */,
+				C8A7BAB4335222C218448751 /* Pods-BrandiHomework-BrandiHomeworkUITests.release.xcconfig */,
+				2E50855F6BD956829CDED688 /* Pods-BrandiHomeworkTests.debug.xcconfig */,
+				C4AE06A00894132CDA5ABC2A /* Pods-BrandiHomeworkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1157FC1427E94F5600EB36D1 /* BrandiHomework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1157FC4227E94F5700EB36D1 /* Build configuration list for PBXNativeTarget "BrandiHomework" */;
+			buildPhases = (
+				09E281B8509E8E11DA341F2E /* [CP] Check Pods Manifest.lock */,
+				1157FC1127E94F5600EB36D1 /* Sources */,
+				1157FC1227E94F5600EB36D1 /* Frameworks */,
+				1157FC1327E94F5600EB36D1 /* Resources */,
+				1043242FBA4BB47363E6C95D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrandiHomework;
+			productName = BrandiHomework;
+			productReference = 1157FC1527E94F5600EB36D1 /* BrandiHomework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1157FC2D27E94F5700EB36D1 /* BrandiHomeworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1157FC4527E94F5700EB36D1 /* Build configuration list for PBXNativeTarget "BrandiHomeworkTests" */;
+			buildPhases = (
+				052FD30F99E1281009F22070 /* [CP] Check Pods Manifest.lock */,
+				1157FC2A27E94F5700EB36D1 /* Sources */,
+				1157FC2B27E94F5700EB36D1 /* Frameworks */,
+				1157FC2C27E94F5700EB36D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1157FC3027E94F5700EB36D1 /* PBXTargetDependency */,
+			);
+			name = BrandiHomeworkTests;
+			productName = BrandiHomeworkTests;
+			productReference = 1157FC2E27E94F5700EB36D1 /* BrandiHomeworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1157FC3727E94F5700EB36D1 /* BrandiHomeworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1157FC4827E94F5700EB36D1 /* Build configuration list for PBXNativeTarget "BrandiHomeworkUITests" */;
+			buildPhases = (
+				600B1A75CE628EBBEECCD74D /* [CP] Check Pods Manifest.lock */,
+				1157FC3427E94F5700EB36D1 /* Sources */,
+				1157FC3527E94F5700EB36D1 /* Frameworks */,
+				1157FC3627E94F5700EB36D1 /* Resources */,
+				2386E06CE5A3A631E94125DE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1157FC3A27E94F5700EB36D1 /* PBXTargetDependency */,
+			);
+			name = BrandiHomeworkUITests;
+			productName = BrandiHomeworkUITests;
+			productReference = 1157FC3827E94F5700EB36D1 /* BrandiHomeworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1157FC0D27E94F5600EB36D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					1157FC1427E94F5600EB36D1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					1157FC2D27E94F5700EB36D1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 1157FC1427E94F5600EB36D1;
+					};
+					1157FC3727E94F5700EB36D1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 1157FC1427E94F5600EB36D1;
+					};
+				};
+			};
+			buildConfigurationList = 1157FC1027E94F5600EB36D1 /* Build configuration list for PBXProject "BrandiHomework" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1157FC0C27E94F5600EB36D1;
+			productRefGroup = 1157FC1627E94F5600EB36D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1157FC1427E94F5600EB36D1 /* BrandiHomework */,
+				1157FC2D27E94F5700EB36D1 /* BrandiHomeworkTests */,
+				1157FC3727E94F5700EB36D1 /* BrandiHomeworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1157FC1327E94F5600EB36D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1157FC2827E94F5700EB36D1 /* LaunchScreen.storyboard in Resources */,
+				1157FC2527E94F5700EB36D1 /* Assets.xcassets in Resources */,
+				1157FC7327E9D77500EB36D1 /* ImageCollectionViewCell.xib in Resources */,
+				1157FC2027E94F5600EB36D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1157FC2C27E94F5700EB36D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1157FC3627E94F5700EB36D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		052FD30F99E1281009F22070 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrandiHomeworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09E281B8509E8E11DA341F2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrandiHomework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1043242FBA4BB47363E6C95D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrandiHomework/Pods-BrandiHomework-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrandiHomework/Pods-BrandiHomework-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrandiHomework/Pods-BrandiHomework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2386E06CE5A3A631E94125DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrandiHomework-BrandiHomeworkUITests/Pods-BrandiHomework-BrandiHomeworkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrandiHomework-BrandiHomeworkUITests/Pods-BrandiHomework-BrandiHomeworkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrandiHomework-BrandiHomeworkUITests/Pods-BrandiHomework-BrandiHomeworkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		600B1A75CE628EBBEECCD74D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrandiHomework-BrandiHomeworkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1157FC1127E94F5600EB36D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1157FC5427E964A800EB36D1 /* UICollectionViewCell+Extension.swift in Sources */,
+				1157FC5C27E965D500EB36D1 /* CommonBaseCollectionViewCell.swift in Sources */,
+				1157FC5627E964B600EB36D1 /* Int+Extension.swift in Sources */,
+				1157FC5A27E965BB00EB36D1 /* CommonBaseViewController.swift in Sources */,
+				1157FC5F27E965EB00EB36D1 /* PrintLog.swift in Sources */,
+				1157FC5227E9649B00EB36D1 /* UIViewController+Extension.swift in Sources */,
+				117525F527EAB5B90002708B /* SearchFilterModel.swift in Sources */,
+				1157FC7127E9AF2D00EB36D1 /* ImageCollectionViewCell.swift in Sources */,
+				1157FC6727E9700700EB36D1 /* BrandiAPI.swift in Sources */,
+				1157FC7727E9FDA700EB36D1 /* String+Extension.swift in Sources */,
+				1157FC5827E964C200EB36D1 /* UIView+Extension.swift in Sources */,
+				1157FC7527E9D7AE00EB36D1 /* MainItemReactor.swift in Sources */,
+				1157FC6927E9702500EB36D1 /* NetworkWorker.swift in Sources */,
+				1157FC1D27E94F5600EB36D1 /* MainViewController.swift in Sources */,
+				1157FC1927E94F5600EB36D1 /* AppDelegate.swift in Sources */,
+				1157FC6E27E9AE6700EB36D1 /* MainViewReactor.swift in Sources */,
+				1157FC6C27E9ACC000EB36D1 /* SearchImageModel.swift in Sources */,
+				117525F327EA99CC0002708B /* ImageDetailViewReactor.swift in Sources */,
+				117525F127EA99B90002708B /* ImageDetailViewController.swift in Sources */,
+				1157FC1B27E94F5600EB36D1 /* SceneDelegate.swift in Sources */,
+				1157FC2327E94F5600EB36D1 /* BrandiHomework.xcdatamodeld in Sources */,
+				1157FC6527E96FF200EB36D1 /* ApiError.swift in Sources */,
+				1157FC5027E9648E00EB36D1 /* UIStoryboard+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1157FC2A27E94F5700EB36D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1157FC3327E94F5700EB36D1 /* BrandiHomeworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1157FC3427E94F5700EB36D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1157FC3F27E94F5700EB36D1 /* BrandiHomeworkUITestsLaunchTests.swift in Sources */,
+				1157FC3D27E94F5700EB36D1 /* BrandiHomeworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1157FC3027E94F5700EB36D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1157FC1427E94F5600EB36D1 /* BrandiHomework */;
+			targetProxy = 1157FC2F27E94F5700EB36D1 /* PBXContainerItemProxy */;
+		};
+		1157FC3A27E94F5700EB36D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1157FC1427E94F5600EB36D1 /* BrandiHomework */;
+			targetProxy = 1157FC3927E94F5700EB36D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1157FC1E27E94F5600EB36D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1157FC1F27E94F5600EB36D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1157FC2627E94F5700EB36D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1157FC2727E94F5700EB36D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1157FC4027E94F5700EB36D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1157FC4127E94F5700EB36D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1157FC4327E94F5700EB36D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C61C42ACF90D5594A054DCC /* Pods-BrandiHomework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrandiHomework/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.BrandiHomework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1157FC4427E94F5700EB36D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CEC13253E2E409167500DD /* Pods-BrandiHomework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrandiHomework/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.BrandiHomework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1157FC4627E94F5700EB36D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E50855F6BD956829CDED688 /* Pods-BrandiHomeworkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.BrandiHomeworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrandiHomework.app/BrandiHomework";
+			};
+			name = Debug;
+		};
+		1157FC4727E94F5700EB36D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4AE06A00894132CDA5ABC2A /* Pods-BrandiHomeworkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.BrandiHomeworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrandiHomework.app/BrandiHomework";
+			};
+			name = Release;
+		};
+		1157FC4927E94F5700EB36D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2902BBABCE24E2221E1BA668 /* Pods-BrandiHomework-BrandiHomeworkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.BrandiHomeworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrandiHomework;
+			};
+			name = Debug;
+		};
+		1157FC4A27E94F5700EB36D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A7BAB4335222C218448751 /* Pods-BrandiHomework-BrandiHomeworkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.BrandiHomeworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrandiHomework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1157FC1027E94F5600EB36D1 /* Build configuration list for PBXProject "BrandiHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1157FC4027E94F5700EB36D1 /* Debug */,
+				1157FC4127E94F5700EB36D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1157FC4227E94F5700EB36D1 /* Build configuration list for PBXNativeTarget "BrandiHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1157FC4327E94F5700EB36D1 /* Debug */,
+				1157FC4427E94F5700EB36D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1157FC4527E94F5700EB36D1 /* Build configuration list for PBXNativeTarget "BrandiHomeworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1157FC4627E94F5700EB36D1 /* Debug */,
+				1157FC4727E94F5700EB36D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1157FC4827E94F5700EB36D1 /* Build configuration list for PBXNativeTarget "BrandiHomeworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1157FC4927E94F5700EB36D1 /* Debug */,
+				1157FC4A27E94F5700EB36D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1157FC2127E94F5600EB36D1 /* BrandiHomework.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1157FC2227E94F5600EB36D1 /* BrandiHomework.xcdatamodel */,
+			);
+			currentVersion = 1157FC2227E94F5600EB36D1 /* BrandiHomework.xcdatamodel */;
+			path = BrandiHomework.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1157FC0D27E94F5600EB36D1 /* Project object */;
+}
